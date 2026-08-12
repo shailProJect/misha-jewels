@@ -86,12 +86,36 @@ export const DIAMOND_TYPES = [
 ];
 
 export const JEWELLERY_CATEGORIES = [
-  { title: "Rings", desc: "Solitaires, bands and statement pieces, hand finished to order." },
-  { title: "Earrings", desc: "From studs to chandeliers, balanced for comfort and light." },
-  { title: "Chains", desc: "Gold and silver chains in classic and contemporary link work." },
-  { title: "Mangalsutra", desc: "Traditional design rendered with modern craftsmanship and stone work." },
-  { title: "Bracelets", desc: "Articulated gold and diamond bracelets built for everyday wear." },
-  { title: "Necklaces", desc: "Statement and bridal necklaces, layered with precious stone." },
+  {
+    title: "Rings",
+    desc: "Solitaires, bands and statement pieces, hand finished to order.",
+    image: "https://res.cloudinary.com/sqwhjqbs/image/upload/v1786530690/rings.png"
+  },
+  {
+    title: "Earrings",
+    desc: "From studs to chandeliers, balanced for comfort and lightness.",
+    image: "https://res.cloudinary.com/sqwhjqbs/image/upload/v1786530690/earrings.png"
+  },
+  {
+    title: "Chains",
+    desc: "Gold and silver chains in classic and contemporary link work.",
+    image: "https://res.cloudinary.com/sqwhjqbs/image/upload/v1786530690/chains.png"
+  },
+  {
+    title: "Mangalsutra",
+    desc: "Traditional design rendered with modern craftsmanship and stone work.",
+    image: "https://res.cloudinary.com/sqwhjqbs/image/upload/v1786530690/mangalsutra.png"
+  },
+  {
+    title: "Bracelets",
+    desc: "Articulated gold and diamond bracelets built for everyday wear.",
+    image: "https://res.cloudinary.com/sqwhjqbs/image/upload/v1786530690/bracelets.png"
+  },
+  {
+    title: "Necklaces",
+    desc: "Statement and bridal necklaces, layered with precious stone.",
+    image: "https://res.cloudinary.com/sqwhjqbs/image/upload/v1786530690/necklaces.png"
+  }
 ];
 
 export const STATS = [
