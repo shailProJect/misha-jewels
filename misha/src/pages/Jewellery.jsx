@@ -56,17 +56,17 @@ export default function Jewellery() {
                   whileHover={{ y: -6 }}
                   className="relative aspect-[4/5] overflow-hidden rounded-sm group cursor-pointer glass"
                 >
-                  <img
-                   src={cat.image}
-                   alt={cat.title}
-                    className="absolute inset-0 z-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-                  />00
                   <div
-                    className="absolute inset-0 transition-transform duration-700 group-hover:scale-110"
-                    style={{
-                      background: `linear-gradient(155deg, hsl(${45 + i * 12} 22% 9%) 0%, #0a0a0a 55%, #050505 100%)`,
-                    }}
-                  />
+  className="absolute inset-0 -z-10"
+  style={{
+    background: `linear-gradient(155deg, hsl(${45 + i * 12} 22% 9%) 0%, #0a0a0a 55%, #050505 100%)`,
+  }}
+/>
+<img
+ src={cat.image}
+ alt={cat.title}
+  className="absolute inset-0 z-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+/>
                   <div className="absolute inset-0 flex items-center justify-center opacity-25 group-hover:opacity-55 transition-opacity duration-700">
                     <svg width="45%" height="45%" viewBox="0 0 100 100">
                       <circle cx="50" cy="50" r="32" fill="none" stroke="#D4AF37" strokeWidth="0.6" />
