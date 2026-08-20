@@ -2,9 +2,8 @@ import { motion } from "framer-motion";
 import useSEO from "../hooks/useSEO";
 import PageHero from "../components/layout/PageHero";
 import SectionHeading from "../components/ui/SectionHeading";
-import GlassCard from "../components/ui/GlassCard";
 import CTA from "../components/sections/CTA";
-import { MANUFACTURING_PROCESS, COMPANY } from "../data/company";
+import { MANUFACTURING_PROCESS, COMPANY,MANUFACTURING_GALLERY } from "../data/company";
 
 export default function Manufacturing() {
   useSEO(
@@ -60,6 +59,32 @@ export default function Manufacturing() {
           </motion.div>
         </div>
       </section>
+
+<section className="section-pad bg-[#0f1115] border-y hairline">
+  <div className="container-lux">
+    <SectionHeading eyebrow="Our Facility" title="Manufacturing Units" align="center" />
+    <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-16">
+      {MANUFACTURING_GALLERY.map((unit, i) => (
+        <motion.div
+          key={unit.title}
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-60px" }}
+          transition={{ duration: 0.6, delay: i * 0.1 }}
+          className="relative aspect-[4/3] rounded-sm overflow-hidden glass group"
+        >
+          <img
+            src={unit.image}
+            alt={unit.title}
+            className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/10 to-transparent" />
+          <p className="absolute bottom-5 left-5 font-display text-xl text-white">{unit.title}</p>
+        </motion.div>
+      ))}
+    </div>
+  </div>
+</section>
 
       {/* Process */}
       <section className="section-pad bg-[#0f1115] border-y hairline">

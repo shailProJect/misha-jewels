@@ -4,7 +4,7 @@ import PageHero from "../components/layout/PageHero";
 import SectionHeading from "../components/ui/SectionHeading";
 import GlassCard from "../components/ui/GlassCard";
 import CTA from "../components/sections/CTA";
-import { DIAMOND_TYPES } from "../data/company";
+import { DIAMOND_TYPES,DIAMOND_GALLERY } from "../data/company";
 
 const QUALITY_STEPS = [
   { title: "Sourcing", desc: "Diamonds are sourced exclusively from reliable, recognised suppliers." },
@@ -83,6 +83,31 @@ export default function Diamonds() {
         </div>
       </section>
 
+<section className="section-pad">
+  <div className="container-lux">
+    <SectionHeading eyebrow="Gallery" title="Our Diamonds" align="center" />
+    <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-16">
+      {DIAMOND_GALLERY.map((d, i) => (
+        <motion.div
+          key={d.title}
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-60px" }}
+          transition={{ duration: 0.6, delay: i * 0.1 }}
+          className="relative aspect-[4/3] rounded-sm overflow-hidden glass group"
+        >
+          <img
+            src={d.image}
+            alt={d.title}
+            className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/10 to-transparent" />
+          <p className="absolute bottom-5 left-5 font-display text-xl text-white">{d.title}</p>
+        </motion.div>
+      ))}
+    </div>
+  </div>
+</section>
       <CTA />
     </>
   );

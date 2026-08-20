@@ -25,12 +25,17 @@ export default function FeaturedJewellery() {
                   background: `linear-gradient(150deg, hsl(${40 + i * 8} 25% 10%) 0%, #0a0a0a 60%, #050505 100%)`,
                 }}
               />
-              <div className="absolute inset-0 flex items-center justify-center opacity-30 group-hover:opacity-60 transition-opacity duration-700">
-                <svg width="40%" height="40%" viewBox="0 0 100 100">
-                  <circle cx="50" cy="50" r="30" fill="none" stroke="#D4AF37" strokeWidth="0.6" />
-                  <polygon points="50,25 68,45 60,75 40,75 32,45" fill="none" stroke="#D4AF37" strokeWidth="0.5" />
-                </svg>
-              </div>
+                           <div
+                className="absolute inset-0 -z-10"
+                style={{
+                  background: `linear-gradient(150deg, hsl(${40 + i * 8} 25% 10%) 0%, #0a0a0a 60%, #050505 100%)`,
+                }}
+              />
+              <img
+                src={cat.image}
+                alt={cat.title}
+                className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-110"
+              />
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/10 to-transparent" />
               <div className="absolute bottom-0 left-0 right-0 p-6 translate-y-2 group-hover:translate-y-0 transition-transform duration-500">
                 <h3 className="font-display text-xl text-white mb-1">{cat.title}</h3>

@@ -148,3 +148,16 @@ export const FAQS = [
   { q: "What is your minimum order quantity for export?", a: "MOQs vary by product category and stone specification. Share your requirement through the inquiry form and our team will respond with a tailored quote." },
   { q: "Are your diamonds certified?", a: "We source natural and lab-grown diamonds exclusively from reliable, recognised suppliers, with gemmological verification at every stage of selection." },
 ];
+
+
+export const MANUFACTURING_GALLERY = [
+  { title: "Surat SEZ Facility", image: "https://res.cloudinary.com/dam35mimk/image/upload/v1787216601/Mesha2_i5jjtf.jpg" },
+  { title: "Manufacturing Unit", image: "https://res.cloudinary.com/dam35mimk/image/upload/v1787216601/Mesha1_fewrpo.jpg" },
+  { title: "Production Floor", image: "https://res.cloudinary.com/dam35mimk/image/upload/v1787216601/Mesha4_ephwdq.jpg" },
+  { title: "Finishing Unit", image: "https://res.cloudinary.com/dam35mimk/image/upload/v1787216601/Mesha3_wnxfvc.jpg" },
+];
+
+export const DIAMOND_GALLERY = [
+  { title: "Natural Diamonds", image: "https://res.cloudinary.com/dam35mimk/image/upload/v1787217003/Natural_mendzw.png" },
+  { title: "Lab Grown Diamonds", image: "https://res.cloudinary.com/dam35mimk/image/upload/v1787217003/Lab_ne0doi.png" },
+];
