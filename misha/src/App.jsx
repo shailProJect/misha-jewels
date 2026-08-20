@@ -42,7 +42,7 @@ export default function App() {
             <Route path="/manufacturing" element={<PageTransition><Manufacturing /></PageTransition>} />
             <Route path="/diamonds" element={<PageTransition><Diamonds /></PageTransition>} />
             <Route path="/jewellery" element={<PageTransition><Jewellery /></PageTransition>} />
-            <Route path="/gallery" element={<PageTransition><Gallery /></PageTransition>} />
+            {/* <Route path="/gallery" element={<PageTransition><Gallery /></PageTransition>} /> */}
             <Route path="/contact" element={<PageTransition><Contact /></PageTransition>} />
             <Route path="*" element={<PageTransition><NotFound /></PageTransition>} />
           </Routes>

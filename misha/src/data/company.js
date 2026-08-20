@@ -138,7 +138,7 @@ export const NAV_LINKS = [
   { label: "Manufacturing", to: "/manufacturing" },
   { label: "Diamonds", to: "/diamonds" },
   { label: "Jewellery", to: "/jewellery" },
-  { label: "Gallery", to: "/gallery" },
+  // { label: "Gallery", to: "/gallery" },
   { label: "Contact", to: "/contact" },
 ];
 
