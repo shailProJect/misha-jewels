@@ -20,13 +20,7 @@ export default function AboutPreview() {
             }}
           />
           <div className="absolute inset-0 flex items-center justify-center">
-            <svg width="55%" height="55%" viewBox="0 0 100 100" className="opacity-70">
-              <polygon points="50,8 88,35 72,92 28,92 12,35" fill="none" stroke="#D4AF37" strokeWidth="0.8" />
-              <polygon points="50,8 88,35 12,35" fill="none" stroke="#D4AF37" strokeWidth="0.5" opacity="0.6" />
-              <line x1="28" y1="92" x2="50" y2="35" stroke="#D4AF37" strokeWidth="0.4" opacity="0.5" />
-              <line x1="72" y1="92" x2="50" y2="35" stroke="#D4AF37" strokeWidth="0.4" opacity="0.5" />
-              <line x1="12" y1="35" x2="88" y2="35" stroke="#D4AF37" strokeWidth="0.3" opacity="0.3" />
-            </svg>
+            <img src="https://res.cloudinary.com/dam35mimk/image/upload/v1787217761/MainFront_vkqlzy.png" alt="" className="w-full h-full object-cover" />
           </div>
           <div className="absolute bottom-6 left-6 right-6 glass rounded-sm p-5 flex items-center justify-between">
             <div>
